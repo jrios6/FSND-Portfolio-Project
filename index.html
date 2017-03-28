@@ -28,9 +28,9 @@
           </div>
         </header>
 
-        <div class="row">
+        <section class="row">
           <hr>
-        </div>
+        </section>
 
         <figure class="main-image row">
             <img class="img-responsive" src="./img/mainimage.jpg" alt="Coding Image">
@@ -41,7 +41,7 @@
               <h3 class="text-muted">Featured Work</h3>
           </div>
 
-            <div class="proj col-sm-4">
+            <article class="proj col-sm-4">
                 <figure>
                     <img class="proj-cover-img img-responsive center-block"
                           src="img/fresh_tomatoes_1x.png"
@@ -49,14 +49,16 @@
                           data-toggle="modal"
                           data-target="#project1"
                           alt="Image of Fresh Tomatoes Website">
-                    <h4 class="proj-title text-uppercase">Fresh Tomatoes</h4>
+                    <figcaption>
+                      <h4 class="proj-title text-uppercase">Fresh Tomatoes</h4>
+                    </figcaption>
                 </figure>
                 <a href="https://github.com/jrios6/Movie_Trailer_Website" target="_blank">
                   https://github.com/jrios6/Movie_Trailer_Website
                 </a>
-            </div>
+            </article>
 
-            <div class="proj col-sm-4">
+            <article class="proj col-sm-4">
                 <figure>
                     <img class="proj-cover-img img-responsive center-block"
                           src="img/sudoku_1x.png"
@@ -64,14 +66,16 @@
                           data-toggle="modal"
                           data-target="#project2"
                           alt="Image of Sudoku Gameboard">
-                    <h4 class="proj-title text-uppercase">Sudoku Solver</h4>
+                          <figcaption>
+                            <h4 class="proj-title text-uppercase">Sudoku Solver</h4>
+                          </figcaption>
                 </figure>
                 <a href="https://github.com/jrios6/AI_Sudoku_Solver" target="_blank">
                   https://github.com/jrios6/AI_Sudoku_Solver
                 </a>
-            </div>
+            </article>
 
-            <div class="proj col-sm-4">
+            <article class="proj col-sm-4">
                 <figure>
                     <img class="proj-cover-img img-responsive center-block"
                           src="img/isolation_1x.png"
@@ -79,18 +83,20 @@
                           data-toggle="modal"
                           data-target="#project3"
                           alt="Image of Isolation Gameboard">
-                    <h4 class="proj-title text-uppercase">Isolation Agent</h4>
+                          <figcaption>
+                            <h4 class="proj-title text-uppercase">Isolation Agent</h4>
+                          </figcaption>
                 </figure>
                 <a href="https://github.com/jrios6/AIND-Isolation" target="_blank">
                   https://github.com/jrios6/AIND-Isolation
                 </a>
-            </div>
+            </article>
         </main>
     </div>
 
     <div class="modal fade" id="project1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-dialog">
-            <div class="modal-content">
+            <article class="modal-content">
                 <header class="modal-header text-center">
                     <h3 class="modal-title" id="myModalLabel">Fresh Tomatoes</h3>
                     <a href="https://github.com/jrios6/Movie_Trailer_Website" target="_blank">
@@ -98,7 +104,7 @@
                     </a>
                 </header>
 
-                <article class="modal-body">
+                <main class="modal-body">
                     <figure>
                         <img class="img-responsive center-block"
                               src="img/fresh_tomatoes_large_1x.png"
@@ -107,18 +113,18 @@
                     </figure>
                     This was my first project in the Udacity Full-Stack Nanodegree. I built the website with object-oriented Python to display a list of popular movies, inspired by Rotten Tomatoes. Upon pressing the movie poster, users will be able to watch a Youtube trailer
                     for the movie.
-                </article>
+                </main>
 
                 <footer class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
                 </footer>
-            </div>
+            </article>
         </div>
     </div>
 
     <div class="modal fade" id="project2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-dialog">
-            <div class="modal-content">
+            <article class="modal-content">
                 <header class="modal-header text-center">
                     <h3 class="modal-title" id="myModalLabel">Sudoku Solver</h3>
                     <a href="https://github.com/jrios6/AI_Sudoku_Solver" target="_blank">
@@ -126,7 +132,7 @@
                     </a>
                 </header>
 
-                <article class="modal-body">
+                <main class="modal-body">
                     <figure>
                         <img class="img-responsive center-block"
                               src="img/sudoku_large_1x.png"
@@ -135,18 +141,18 @@
                     </figure>
                     This was my first project in the Udacity Artifical Intelligence Nanodegree. I built this Sudoku Solver using AI techniques such as contraint propagation and elimination, with recursive depth-first search, to solve problems the Naked Twins and Diagonal
                     Sudoku problem.
-                </article>
+                </main>
 
                 <footer class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
                 </footer>
-            </div>
+            </article>
         </div>
     </div>
 
     <div class="modal fade" id="project3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-dialog">
-            <div class="modal-content">
+            <article class="modal-content">
                 <header class="modal-header text-center">
                     <h3 class="modal-title" id="myModalLabel">Isolation Agent</h3>
                     <a href="https://github.com/jrios6/AIND-Isolation" target="_blank">
@@ -154,7 +160,7 @@
                     </a>
                 </header>
 
-                <article class="modal-body">
+                <main class="modal-body">
                     <figure>
                         <img class="img-responsive center-block"
                             src="img/isolation_large_1x.png"
@@ -163,12 +169,12 @@
                     </figure>
                     This was my second project in the Udacity Artifical Intelligence Nanodegree. I built this Isolation game-playing agent that applies AI techniques such as Alpha-Beta Pruning, Iterative Deepening Search and Minimax Search and a custom evaluation heuristic
                     to beat the standard Isolation agent.
-                </article>
+                </main>
 
                 <footer class="modal-footer">
                     <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
                 </footer>
-            </div>
+            </article>
         </div>
     </div>
 </body>
