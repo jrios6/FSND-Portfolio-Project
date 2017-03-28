@@ -1,0 +1,48 @@
+* {
+  font-family: 'Lato', sans-serif;
+  color: #2d3c49;
+  font-weight: 300;
+}
+
+hr {
+  border: 1px solid #7d97ad;
+}
+
+p {
+  font-size: 14px;
+}
+
+nav a, button {
+  min-width: 48px;
+  min-height: 48px;
+}
+
+.title-logo {
+  max-width: 240px;
+  margin-top: 30px;
+}
+
+.text-muted {
+  color: #4b769a
+}
+
+.text-thin {
+  font-weight: 100;
+}
+
+.title-super {
+  font-size: 55px;
+}
+
+.proj-title {
+  font-size: 19px;
+  margin-top: 13px;
+  margin-bottom: 6px;
+  font-weight: 700;
+}
+
+@media (min-width: 768px) {
+  .title-text {
+    text-align: right;
+  }
+}
