@@ -6,121 +6,165 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Jia Rui's Portfolio</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link src="//normalize-css.googlecode.com/svn/trunk/normalize.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
-    <script type="text/javascript" src="js/jquery-3.2.0.min.js"></script>
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script src="js/jquery-3.2.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 </head>
 
 <body>
     <div class="container">
-        <div class="row">
+        <header class="row col-sm-12">
             <div class="col-sm-4">
                 <img class="title-logo img-responsive" src="./img/logo.min.svg" alt="Udacity's Logo">
             </div>
+
             <div class="col-sm-8 title-text text-uppercase">
                 <h1 class="title-super text-thin">Ong Jia Rui</h1>
-                <h4 class="">Full-Stack Ninja | Machine Learning Enthusiast</h2>
+                <h4 class="">Full-Stack Ninja | Machine Learning Enthusiast</h4>
             </div>
+        </header>
+
+        <div class="row col-sm-12">
+            <hr>
         </div>
-        <div class="row">
-            <div class="col-sm-12">
-                <hr>
-            </div>
+
+        <figure class="main-image row col-sm-12">
+            <img class="img-responsive center-block" src="./img/mainimage.jpg" alt="Coding Image">
+        </figure>
+
+        <div class="row col-sm-12">
+            <h3 class="text-muted">Featured Work</h3>
         </div>
-        <div class="row">
-            <div class="col-sm-12">
-                <img class="img-responsive" src="./img/mainimage.jpg" alt="Coding Image">
+
+        <main class="row text-center">
+            <div class="proj col-sm-4">
+                <figure>
+                    <img class="proj-cover-img img-responsive center-block"
+                          src="img/fresh_tomatoes_1x.png"
+                          srcset="img/fresh_tomatoes_2x.png 2x"
+                          data-toggle="modal"
+                          data-target="#project1"
+                          alt="Image of Fresh Tomatoes Website">
+                    <h4 class="proj-title text-uppercase">Fresh Tomatoes</h4>
+                </figure>
+                <a href="https://github.com/jrios6/Movie_Trailer_Website" target="_blank">
+                  https://github.com/jrios6/Movie_Trailer_Website
+                </a>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-12">
-                <h3 class="text-muted">Featured Work</h3>
+
+            <div class="proj col-sm-4">
+                <figure>
+                    <img class="proj-cover-img img-responsive center-block"
+                          src="img/sudoku_1x.png"
+                          srcset="img/sudoku_2x.png 2x"
+                          data-toggle="modal"
+                          data-target="#project2"
+                          alt="Image of Sudoku Gameboard">
+                    <h4 class="proj-title text-uppercase">Sudoku Solver</h4>
+                </figure>
+                <a href="https://github.com/jrios6/AI_Sudoku_Solver" target="_blank">
+                  https://github.com/jrios6/AI_Sudoku_Solver
+                </a>
             </div>
-        </div>
-        <div class="row text-center">
-            <div class="col-sm-4">
-                <img class="proj-cover-img img-responsive center-block"
-                      src="img/fresh_tomatoes_1x.png"
-                      srcset="img/fresh_tomatoes_2x.png 2x"
-                      data-toggle="modal"
-                      data-target="#project1"
-                      alt="Fresh Tomatoes Image">
-                <h4 class="proj-title text-uppercase">Fresh Tomatoes</h4>
-                <p>
-                    <a href="https://github.com/jrios6/Movie_Trailer_Website">https://github.com/jrios6/Movie_Trailer_Website</a>
-                </p>
+
+            <div class="proj col-sm-4">
+                <figure>
+                    <img class="proj-cover-img img-responsive center-block"
+                          src="img/isolation_1x.png"
+                          srcset="img/isolation_2x.png 2x"
+                          data-toggle="modal"
+                          data-target="#project3"
+                          alt="Image of Isolation Gameboard">
+                    <h4 class="proj-title text-uppercase">Isolation Agent</h4>
+                </figure>
+                <a href="https://github.com/jrios6/AIND-Isolation" target="_blank">
+                  https://github.com/jrios6/AIND-Isolation
+                </a>
             </div>
-            <div class="col-sm-4">
-                <img class="proj-cover-img img-responsive center-block" src="img/sudoku_1x.png" srcset="img/sudoku_2x.png 2x" data-toggle="modal" data-target="#project2" alt="Fresh Tomatoes Image">
-                <h4 class="proj-title text-uppercase">Sudoku Solver</h4>
-                <p>
-                    <a href="https://github.com/jrios6/AI_Sudoku_Solver">https://github.com/jrios6/AI_Sudoku_Solver</a>
-                </p>
-            </div>
-            <div class="col-sm-4">
-                <img class="proj-cover-img img-responsive center-block" src="img/isolation_1x.png" srcset="img/isolation_2x.png 2x" data-toggle="modal" data-target="#project3" alt="Fresh Tomatoes Image">
-                <h4 class="proj-title text-uppercase">Isolation Agent</h4>
-                <p>
-                    <a href="https://github.com/jrios6/AIND-Isolation">https://github.com/jrios6/AIND-Isolation</a>
-                </p>
-            </div>
-        </div>
+        </main>
     </div>
+
     <div class="modal fade" id="project1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header text-center">
                     <h3 class="modal-title" id="myModalLabel">Fresh Tomatoes</h3>
-                    <p>
-                        <a href="https://github.com/jrios6/Movie_Trailer_Website">https://github.com/jrios6/Movie_Trailer_Website</a>
-                    </p>
+                    <a href="https://github.com/jrios6/Movie_Trailer_Website" target="_blank">
+                      https://github.com/jrios6/Movie_Trailer_Website
+                    </a>
                 </div>
+
                 <div class="modal-body">
-                    <img class="img-responsive" src="img/fresh_tomatoes_large_1x.png" srcset="img/fresh_tomatoes_large_2x.png 2x"> This was my first project in the Udacity Full-Stack Nanodegree. I built the website with object-oriented Python to display
-                    a list of popular movies, inspired by Rotten Tomatoes. Upon pressing the movie poster, users will be able to watch a Youtube trailer for the movie.
+                    <figure>
+                        <img class="img-responsive center-block"
+                              src="img/fresh_tomatoes_large_1x.png"
+                              srcset="img/fresh_tomatoes_large_2x.png 2x"
+                              alt="Image of Fresh Tomatoes Website">
+                    </figure>
+                    This was my first project in the Udacity Full-Stack Nanodegree. I built the website with object-oriented Python to display a list of popular movies, inspired by Rotten Tomatoes. Upon pressing the movie poster, users will be able to watch a Youtube trailer
+                    for the movie.
                 </div>
+
                 <div class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                 </div>
             </div>
         </div>
     </div>
+
     <div class="modal fade" id="project2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header text-center">
                     <h3 class="modal-title" id="myModalLabel">Sudoku Solver</h3>
-                    <p>
-                        <a href="https://github.com/jrios6/AI_Sudoku_Solver">https://github.com/jrios6/AI_Sudoku_Solver</a>
-                    </p>
+                    <a href="https://github.com/jrios6/AI_Sudoku_Solver" target="_blank">
+                      https://github.com/jrios6/AI_Sudoku_Solver
+                    </a>
                 </div>
+
                 <div class="modal-body">
-                    <img class="img-responsive" src="img/sudoku_large_1x.png" srcset="img/sudoku_large_2x.png 2x"> This was my first project in the Udacity Artifical Intelligence Nanodegree. I built this Sudoku Solver using AI techniques such as contraint
-                    propagation and elimination, with recursive depth-first search, to solve problems the Naked Twins and Diagonal Sudoku problem.
+                    <figure>
+                        <img class="img-responsive center-block"
+                              src="img/sudoku_large_1x.png"
+                              srcset="img/sudoku_large_2x.png 2x"
+                              alt="Image of Sudoku Gameboard">
+                    </figure>
+                    This was my first project in the Udacity Artifical Intelligence Nanodegree. I built this Sudoku Solver using AI techniques such as contraint propagation and elimination, with recursive depth-first search, to solve problems the Naked Twins and Diagonal
+                    Sudoku problem.
                 </div>
+
                 <div class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                 </div>
             </div>
         </div>
     </div>
+
     <div class="modal fade" id="project3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header text-center">
                     <h3 class="modal-title" id="myModalLabel">Isolation Agent</h3>
-                    <p>
-                        <a href="https://github.com/jrios6/AIND-Isolation">https://github.com/jrios6/AIND-Isolation</a>
-                    </p>
+                    <a href="https://github.com/jrios6/AIND-Isolation" target="_blank">
+                      https://github.com/jrios6/AIND-Isolation
+                    </a>
                 </div>
+
                 <div class="modal-body">
-                    <img class="img-responsive" src="img/isolation_large_1x.png" srcset="img/isolation_large_2x.png 2x"> This was my second project in the Udacity Artifical Intelligence Nanodegree. I built this Isolation game-playing agent that applies
-                    AI techniques such as Alpha-Beta Pruning, Iterative Deepening Search and Minimax Search, a custom evaluation heuristic to beat the standard Isolation agent.
+                    <figure>
+                        <img class="img-responsive center-block"
+                            src="img/isolation_large_1x.png"
+                            srcset="img/isolation_large_2x.png 2x"
+                            alt="Image of Isolation Gameboard">
+                    </figure>
+                    This was my second project in the Udacity Artifical Intelligence Nanodegree. I built this Isolation game-playing agent that applies AI techniques such as Alpha-Beta Pruning, Iterative Deepening Search and Minimax Search and a custom evaluation heuristic
+                    to beat the standard Isolation agent.
                 </div>
+
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
                 </div>
             </div>
         </div>

@@ -1,21 +1,18 @@
 * {
-    font-family: 'Lato', sans-serif;
+    font-family: "Lato", sans-serif;
     color: #2d3c49;
     font-weight: 300;
 }
 
 hr {
     border: 1px solid #7d97ad;
+    margin-top: 12px;
+    margin-bottom: 24px;
 }
 
-p {
+a {
     font-size: 14px;
     word-wrap: break-word;
-}
-
-nav a, button {
-    min-width: 48px;
-    min-height: 48px;
 }
 
 .container {
@@ -37,12 +34,22 @@ nav a, button {
 
 .title-super {
     font-size: 55px;
+    margin: 30px 0px 20px 0px;
+}
+
+.main-image {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.proj figure {
+    margin: 8px;
 }
 
 .proj-title {
     font-size: 19px;
     margin-top: 13px;
-    margin-bottom: 6px;
+    margin-bottom: 0px;
     font-weight: 700;
 }
 
@@ -59,9 +66,13 @@ nav a, button {
 }
 
 .modal-body {
-    padding: 32px;
+    padding: 28px 32px;
     font-size: 17px;
     text-align: justify;
+}
+
+.modal-body figure {
+    margin: 0px;
 }
 
 .modal-body img {
@@ -78,7 +89,5 @@ nav a, button {
     }
     .proj-cover-img {
         margin-top: 10px;
-        max-height: 207px;
-        overflow: hidden;
     }
 }
