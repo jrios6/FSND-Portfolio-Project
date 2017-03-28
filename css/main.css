@@ -1,48 +1,84 @@
 * {
-  font-family: 'Lato', sans-serif;
-  color: #2d3c49;
-  font-weight: 300;
+    font-family: 'Lato', sans-serif;
+    color: #2d3c49;
+    font-weight: 300;
 }
 
 hr {
-  border: 1px solid #7d97ad;
+    border: 1px solid #7d97ad;
 }
 
 p {
-  font-size: 14px;
+    font-size: 14px;
+    word-wrap: break-word;
 }
 
 nav a, button {
-  min-width: 48px;
-  min-height: 48px;
+    min-width: 48px;
+    min-height: 48px;
+}
+
+.container {
+    padding-bottom: 16px;
 }
 
 .title-logo {
-  max-width: 240px;
-  margin-top: 30px;
+    max-width: 210px;
+    margin-top: 30px;
 }
 
 .text-muted {
-  color: #4b769a
+    color: #4b769a
 }
 
 .text-thin {
-  font-weight: 100;
+    font-weight: 100;
 }
 
 .title-super {
-  font-size: 55px;
+    font-size: 55px;
 }
 
 .proj-title {
-  font-size: 19px;
-  margin-top: 13px;
-  margin-bottom: 6px;
-  font-weight: 700;
+    font-size: 19px;
+    margin-top: 13px;
+    margin-bottom: 6px;
+    font-weight: 700;
+}
+
+.proj-cover-img {
+    margin-top: 24px;
+}
+
+.modal-header {
+    padding: 16px 0px 6px 0px;
+}
+
+.modal-header h3 {
+    font-size: 27px;
+}
+
+.modal-body {
+    padding: 32px;
+    font-size: 17px;
+    text-align: justify;
+}
+
+.modal-body img {
+    margin-bottom: 16px;
 }
 
 @media (min-width: 768px) {
-  .title-text {
-    text-align: right;
-  }
+    .title-logo {
+        max-width: 240px;
+        margin-top: 30px;
+    }
+    .title-text {
+        text-align: right;
+    }
+    .proj-cover-img {
+        margin-top: 10px;
+        max-height: 207px;
+        overflow: hidden;
+    }
 }
